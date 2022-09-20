@@ -1,4 +1,4 @@
-import DocLayout from "../components/docLayout";
+import DocLayout from "../components/DocLayout";
 import { getFileList } from "../libs/postsDataHealper";
 import { globalData } from '../libs/global'
 

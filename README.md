@@ -3,6 +3,8 @@
 
 this is a simpe demo, use the nextjs. 
 
+if you want to learn nextjs or use nextjs to create a blog website, you can clone this repository.
+
 A simple blog starter using:
 
 - Next.js v12
@@ -17,19 +19,8 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+
 ```
-
-
-
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
