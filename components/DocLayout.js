@@ -1,10 +1,11 @@
 import MHeader from "./MHeader";
 import MFooter from "./MFooter";
-import { Layout, Menu, Space } from 'antd';
+import { Layout, Menu } from 'antd';
 import { useRouter } from 'next/router'
 import styles from './DocLayout.module.scss'
 const { Header, Content, Footer, Sider } = Layout;
 import { globalData } from '../libs/global'
+import SEO from './SEO';
 // import { getFileList } from '../libs/posts-md'
 
 
@@ -22,6 +23,8 @@ export default function DocLayout(props) {
 
   const fileData = props.fileData || {}
 
+  // console.log('fileData:', fileData)
+
   const firstSelectedKey = props.files && props.files[0] || ''
 
 
@@ -32,12 +35,15 @@ export default function DocLayout(props) {
 
   return (
     <Layout className={styles.docLayout}>
-
+      <SEO
+        title={`${fileData.title} - ${globalData.blogName}`}
+        description={fileData.description}
+      />
       <Header style={{ background: 'white', borderBottom: '1px solid #f0f0f0' }}>
         <MHeader></MHeader>
       </Header>
       <Layout className={styles.docMain}>
-        <Sider width={200} style={{ marginTop: '-5px', background: 'none' }}>
+        <Sider width={200} style={{ marginTop: '5px', background: 'none' }}>
           <Menu
             mode="inline"
             defaultSelectedKeys={[firstSelectedKey]}
