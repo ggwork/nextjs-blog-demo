@@ -1,0 +1,47 @@
+.docLayout {
+  min-height: 100vh;
+
+}
+
+.docMain {
+  min-height: calc(100vh - 64px - 70px);
+
+  .docInfo {
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    .bread {}
+
+    .ant-layout-content {
+      margin-top: 16px;
+
+    }
+  }
+}
+
+.detail {
+  padding: 10px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  max-width: 800px;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .time {
+    text-align: right;
+  }
+
+  .cont {
+    margin-top: 20px;
+
+  }
+
+
+}

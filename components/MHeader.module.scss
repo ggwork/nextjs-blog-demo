@@ -1,0 +1,39 @@
+@import '../styles/variables.scss';
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  cursor: pointer;
+
+  .nav {
+    width: 70%;
+
+    :global {
+      .ant-menu {
+        justify-content: end !important;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      margin-left: 10px;
+
+    }
+  }
+}
